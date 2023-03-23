@@ -1,6 +1,0 @@
-App that allows creating shopping list. It doesn't have much input control (app is vulnerable to malicious data) and it supports following features:
-print list --- show list elements
-append product_name --- append product_name
-insert product_name x --- insert product_name at index x
-pop --- delete last element
-exit --- free the memory and exit app
