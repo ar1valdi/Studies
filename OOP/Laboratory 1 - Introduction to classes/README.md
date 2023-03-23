@@ -5,4 +5,4 @@ Application including basic OOP topics such as
 * encapsulation
 * inheritance
 
-App has abstract class PlainFigure and classes inharating from it (sqaure, triangle etc.). It provides methods to count fields and permimeters and some operator overloads;
+App has abstract class PlainFigure and classes inharating from it (square, triangle etc.). It provides methods to count fields or permimeters and some operator overloads;
