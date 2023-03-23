@@ -1,1 +1,1 @@
-# Some code I wrote to prepare for classes
+Some code I wrote to prepare for classes
