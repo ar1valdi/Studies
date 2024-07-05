@@ -1,0 +1,9 @@
+Jak widać na przytoczonym wykresie 'zadanie6.png', w badanym przypadku błąd rezydualny wraz z kolejnymi iteracjami:
+	- rośnie wykładniczo używając metody Jacobi
+	- najpierw maleje, a po około setnej iteracji rośnie wykładniczo
+
+Metody iteracyjne nie zapewniają odpowiednich rezultatów dla każdego przypadku - dla badanej macierzy błąd rezydualny nie zbiegał się, przez co algorytm iteracyjny nie przyniósł żadnych korzystnych rezultatów.
+
+Użycie wbudowanej funkcji do dzielenia macierzy A\b okazało się bardzo szybkie, ponieważ badana macierz jest macierzą rzadką, przez co Matlab mógł użyć dedykowanych algorytmów do szybkiego dzielenia macierzy rzadkich, natomiast badane przeze mnie algorytmy iteracyjne nie wykorzystują rzadkości macierzy do przyspieszenia obliczeń.
+
+Metody iteracyjne przyspieszają obliczenia macierzowe dla niektórych macierzy gęstych. Należy sprawdzić, czy macierz używana w obliczeniach jest gęsta oraz przetestować czy błąd rezydualny się zbiega. Jeżeli jeden z powyższych warunków nie jest spełniony, obliczenia nie dadzą poprawnych wyników lub będą wolne. W tym przypadku lepiej jest użyć wbudowanej funkcji dzielenia macierzy do znalezienia rozwiązań równania (x = A\b).
