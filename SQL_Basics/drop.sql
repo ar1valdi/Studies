@@ -1,0 +1,9 @@
+DROP TABLE Pozycje_Wydatku
+DROP TABLE Wydatki_Zaplanowane
+DROP TABLE Dowody_Zakupu
+DROP TABLE Wydatki_Dokonane
+DROP TABLE Sprzedawca
+DROP TABLE Wydatki
+DROP TABLE Zakup
+DROP TABLE Zarobki
+DROP TABLE Czlonkowie_Rodziny

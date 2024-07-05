@@ -1,0 +1,7 @@
+Szukanie miejsca zerowego funckją fzero jest szybkie i skuteczne, jeżeli funkcja jest ciągła. Badana przeze mnie funkcja tangensa nie jest funkcją ciągłą, co generuje nieporządane scenariusze przy przeszukiwaniu blisko asymptot.
+
+Pierwszy przeprowadzony test przebiegł pomyślnie - funkcja po tylku trzynastu iteracjach znalazła miejsce zerowe z dokładnością do 16 miejsc po przecinku używając jedynie szybkiej metody inverse quadratic interpolation.
+
+Drugi z testów wygenerował 68 iteracji po których nie odnalazł miejsca zerowego funkcji. Spowodowane jest to bliskim położeniem punktu startowego do asymptoty pionowej - funkcja natrafiając na nią znajduje zmianę znaku, a więc szuka w tym miejscu miejsca zerowego, jednak zbliżając się coraz bardziej, wartości zamiast maleć, rosną. Funkcja zawęża szukanie do coraz mniejszego zakresu wartości x, jednak miejsca zerowego w nim nie ma, przez co funkcja generuje dużo iteracji, a finalnie zwraca informację o niepowodzeniu w znalezieniu miejsca zerowego oraz o tym, że w pobliżu punktu zmiany znaku funkcja rośnie zamiast maleć.
+
+Podsumowując, funkcja fzero jest dobrym wyborem przy szukaniu miejsca zerowego w funkcjach ciągłych, jednak istenienie asymptot pionowych prowokuje radykalne zwiększenie ilości iteracji oraz brak poprawnego wyniku (dla początkowych miejsc przeszukań blisko asymptot).
